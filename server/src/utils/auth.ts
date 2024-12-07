@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import unknown from '../config/connection';
+//import unknown from '../config/connection';
 
 export const authenticateToken = ({ req }: unknown) => {
     let token = req.body.token || req.query.token || req.headers.authorization;
